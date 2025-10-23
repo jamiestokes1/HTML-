@@ -1,31 +1,93 @@
-p, blockquote {
+p{
     color: navy;
 }
-
-h1, h2{
-    color: white;
-    background-color: #0000ff;
+header{
+   margin: 0;
+   padding: 0 !important;
+   background-color: navy;
 }
-ul {
+h1{
+   font-size: x-large;
+   color: white;
+   padding-top: 2em;
+   padding-bottom: .2em;
+   padding-left: .4em;
+   margin: 0;
+}
+h2{
+   padding-top: .5em;
+   color:navy;
+   font-size:130%;
+   font-weight: normal;
+}
+h1, h2, h3 {
+   font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+nav ul {
 	list-style-type:none;
+   padding:0%
 }
 
-a {
-	font-weight: bold;
+ nav ul li {
+	display:inline;
+}
+nav ul li a{
+   padding:10px 20px;
+   text-align: center;
+   display: incline-block;
+   width: 25%;
+   box-sizing: border-box;
 }
 
-a:link, a:visited {
-   color: navy;
+nav ul li a:link, nav ul li a:visited {
+   background-color: dodgerblue;
+   color: white;
    text-decoration:none;
 }
 
-a:hover {
-   text-decoration:underline;
-   color: white;
-   background-color: navy;
+nav ul li a:hover {
+   background-color: lightskyblue;
+}
+p a:link, a:visited {
+   color: blue;
 }
 
-a:active {
+p a:hover {
+   text-decoration:none;
+}
+
+
+ul a:active {
    color: orange;
    background-color: navy;
+}
+#tagline{
+   background: #bed8f3;
+   font-style: italic;
+   font-family: Georgia, Times, Serif;
+   border-top:3px solid #7da5d8;
+   border-bottom: 3px solid #7da5d8;
+   padding-top: .2em;
+   padding-bottom: .2em;
+   padding-left: .8em;
+   margin:0%
+}
+.fun{
+   color: #339999;
+   font-family: Georgia, Times, serif;
+   letter-spacing: 0.03em;
+}
+body, html{
+   margin:0;
+   padding:0;
+   width:100%;
+}
+body{
+   font-family: Verdana, Helvetica, Arial, sans-serif;
+   background-color: #e2edff;
+   line-height: 125%;
+}
+#container{
+   width: 80%;
+   margin: 0 auto;
 }
