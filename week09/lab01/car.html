@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Car Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <h1>Book a Car</h1>
+      </header>
+      <main>
+        <section id="form">
+          <h2>Contact Us</h2>
+
+          <form action="process.html" method="get" id="booking">
+            <div class="form-row">
+              <label for="contactname">Name</label>
+              <input
+                type="text"
+                name="contactname"
+                id="contactname"
+                pattern="^[A-Z][a-z]+(?:\s[A-Z][a-z]+)*$" 
+         required 
+         title="Enter a valid name. Each name should start with a capital letter."
+         autofocus>
+              >
+            </div>
+            <div>
+              <label for = "email"><b>Email Address:</b> </label>
+              <input type="email" name="email" id="email" 
+              required
+         title="Enter a valid email address (example: jamie@google.com)">
+            </div>
+    
+<div class = "extras">
+ <b> Do you have a drivers license?</b>:<br>
+  <label for = "text">
+  <input type="radio" name="format" id = "YES" value="YES" checked="checked"> Yes</label>
+  <label for = "html">
+  <input type="radio" name="format" id = "No" value="No"> No</label>
+  <label for = "pdf">
+</div>
+<div>
+   <label for = "Age"><b>Age</b> </label>
+    <input type="Age" name="Age" id="Age" >
+</div>
+<div>
+  <form>
+  <label for="appt-date"><b>Book Appointment:</b></label><br>
+  <input type="date" id="appt-date" name="appt-date" required
+         title="Please select a date"><br><br>
+   
+</form>
+<div>
+   <select name="car-model" id="car-model">
+  <option value="ford-focus">Ford Focus</option>
+  <option value="hyundai-tucson">Hyundai Tucson</option>
+  <option value="toyota-rav4">Toyota Rav4</option>
+  <option value="renault-kadjar">Renault Kadjar</option>
+  <option value="nissan-qashqai">Nissan Qashqai</option>
+</select>
+
+    <br>
+    <b>Please Provide More details below if needed</b>
+    <br>
+    <textarea name="Info" id="Info" rows="5" cols="40" placeholder="Enter additional info"></textarea>
+</div>
+  <button type="submit">Submit details! </button> <button type="submit">Clear info!</button>
+
+  
+
+</div>
+          </form>
+        </section>
+        <section id="image">
+          <figure>
+            <img src="images/car.jfif" alt="Car" class="ui fluid image">
+            <figcaption>Car Rental</figcaption>
+          </figure>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
